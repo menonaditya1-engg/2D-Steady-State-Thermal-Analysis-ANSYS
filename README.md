@@ -21,7 +21,9 @@ A rectangular 2D plate is subjected to internal volumetric heat generation and a
 - Steady-state thermal conditions (no time dependence)  
 - Material properties assumed constant  
 - Radiation effects neglected  
-- Heat transfer occurs only through specified boundaries  
+- Heat transfer occurs only through specified boundaries
+
+![Geometry](images/geometry.png)
 
 
 ## 6. Numerical Method and Solver Details
