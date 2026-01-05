@@ -6,6 +6,9 @@ Finite Element analysis of steady-state 2D heat conduction with internal heat ge
 
 ## 1. Project Overview
 
+This project investigates steady-state heat conduction in a two-dimensional plate using Finite Element Analysis (FEA). The model includes internal heat generation and mixed thermal boundary conditions to represent realistic heat transfer scenarios. The objective is to evaluate the temperature distribution, identify hotspot locations, and study how material properties and boundary conditions influence the maximum temperature. The analysis is performed in ANSYS Mechanical and validated using mesh independence and global energy balance checks.
+
+
 ## 2. Problem Definition
 
 ## 3. Geometry and Assumptions
