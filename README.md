@@ -29,12 +29,16 @@ A rectangular 2D plate is subjected to internal volumetric heat generation and a
 ## 6. Numerical Method and Solver Details
 
 The problem is solved using the steady-state thermal solver in ANSYS Mechanical. The geometry is discretized using 2D thermal finite elements, and temperature is solved at the nodal locations. A mesh convergence study was performed to ensure that the solution is independent of mesh size. The final mesh was selected based on stable peak temperature values with further refinement resulting in negligible changes.
+![Mesh](images/mesh.png)
+
 
 ## 7. Results and Physical Interpretation
 
 The steady-state temperature distribution shows a non-uniform temperature field due to internal heat generation and asymmetric boundary conditions. The maximum temperature occurs near the bottom-right region of the plate, where heat input is high and heat removal is relatively weak. The fixed-temperature boundary on the left edge acts as a strong heat sink, while the convective boundary provides limited cooling, leading to a temperature gradient across the plate.
 
 For the baseline case using Aluminium and a convection coefficient of 25 W/m²·K, the maximum temperature is approximately 225 °C.
+![Baseline Temperature Distribution](images/temperature_baseline.png)
+
 
 
 
@@ -48,7 +52,11 @@ The total heat input consists of:
 
 This results in a total heat input of 22,000 W.
 
-Reaction heat flow probes were used in ANSYS to extract the heat removal at the fixed-temperature boundary and the convective boundary. The heat removed through the left boundary was approximately 20.99 kW, while the heat removed through the convective boundary was approximately 1.01 kW. The total heat leaving the system closely matches the total heat input, confirming global energy conservation and validating the numerical solution.
+Reaction heat flow probes were used in ANSYS to extract the heat removal at the fixed-temperature boundary and the convective boundary. The heat removed through the left boundary was approximately 21.50 kW, while the heat removed through the convective boundary was approximately 0.49 kW. The total heat leaving the system closely matches the total heat input, confirming global energy conservation and validating the numerical solution.
+
+![Reaction Heat Flow Verification](images/reaction_heat_flow_left.png)
+
+![Reaction Heat Flow Verification](images/reaction_heat_flow_right.png)
 
 
 ## 9. Engineering Comparison Study
@@ -58,6 +66,9 @@ A parametric comparison was performed to evaluate the influence of boundary cond
 First, the convection coefficient on the right boundary was increased from 25 W/m²·K to 100 W/m²·K while keeping all other parameters unchanged. This resulted in a reduction of the maximum temperature from approximately 225 °C to 210 °C, indicating that enhanced convection improves heat removal but has a limited impact compared to internal conduction.
 
 Next, the material was changed from Aluminium to Structural Steel while keeping the baseline boundary conditions. Due to the significantly lower thermal conductivity of steel, the maximum temperature increased drastically to approximately 436 °C, and the hotspot became more localized near the right boundary. This demonstrates that material thermal conductivity plays a dominant role in controlling temperature rise in this configuration.
+
+![Steel Case Temperature Distribution](images/temperature_steel.png)
+
 
 
 ## 10. Key Conclusions
