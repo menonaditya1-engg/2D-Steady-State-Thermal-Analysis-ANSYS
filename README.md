@@ -65,7 +65,7 @@ A parametric comparison was performed to evaluate the influence of boundary cond
 
 First, the convection coefficient on the right boundary was increased from 25 W/m²·K to 100 W/m²·K while keeping all other parameters unchanged. This resulted in a reduction of the maximum temperature from approximately 225 °C to 210 °C, indicating that enhanced convection improves heat removal but has a limited impact compared to internal conduction.
 
-Next, the material was changed from Aluminium to Structural Steel while keeping the baseline boundary conditions. Due to the significantly lower thermal conductivity of steel, the maximum temperature increased drastically to approximately 436 °C, and the hotspot became more localized near the right boundary. This demonstrates that material thermal conductivity plays a dominant role in controlling temperature rise in this configuration.
+Next, the material was changed from Aluminium to Structural Steel while keeping the baseline boundary conditions. Due to the significantly lower thermal conductivity of steel, the maximum temperature increased drastically to approximately 436 °C, and the hotspot shifted away from the right boundary. This demonstrates that material thermal conductivity plays a dominant role in controlling temperature rise in this configuration.
 
 ![Steel Case Temperature Distribution](images/temperature_steel.png)
 
