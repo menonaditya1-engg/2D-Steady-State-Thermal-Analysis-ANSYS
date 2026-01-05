@@ -11,7 +11,18 @@ This project investigates steady-state heat conduction in a two-dimensional plat
 
 ## 2. Problem Definition
 
+A rectangular 2D plate is subjected to internal volumetric heat generation and an imposed heat flux at the bottom boundary. Heat is removed through a fixed-temperature boundary on the left edge and convective heat transfer on the right edge, while the top boundary is insulated. The system is analyzed under steady-state conditions to determine the temperature field and peak temperature within the plate.
+
+
 ## 3. Geometry and Assumptions
+
+- Plate dimensions: 200 mm × 100 mm  
+- Analysis performed as a 2D planar model with unit thickness  
+- Steady-state thermal conditions (no time dependence)  
+- Material properties assumed constant  
+- Radiation effects neglected  
+- Heat transfer occurs only through specified boundaries  
+
 
 ## 4. Material Properties
 
